@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicio bucle 3</title>
+
+	<style>
+		div{
+			margin-bottom: 5px;
+		}
+
+		.cuadrado {
+			width: 100px;
+			height: 100px;
+			border: 0px; 
+
+		}
+
+		.circulo{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 0px;
+		}
+
+		.triangulo{
+			width: 0px;
+			height: 0px;
+			border-bottom: 100px solid;
+			border-left: 100px solid transparent;
+			border-right: 100px solid transparent;
+			background-color: transparent !important;
+		}
+
+		
+
+		.rojo{
+			background-color: red;
+			border-bottom-color: red;
+
+		}
+
+		.verde{
+			background-color: green;
+			border-bottom-color: green;
+		}
+
+		.azul{
+			background-color: blue;
+			border-bottom-color: blue;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+
+	<script>
+		
+	//Quiero una aplicación que me pida por pantalla tres figuras (cuadrado, triangulo, circulo), también quiero que me pida el color , el numero de gráficos. Y los pinte en el html
+
+	var figura = prompt('dame un figura, cuadrado, triangulo, circulo');
+
+	
+	var color = prompt('dame un color, rojo, verde, azul');
+	var numeroElementos = prompt('dame un numero');
+
+
+	
+	//
+
+	for(var i= 1; i<=numeroElementos; i++)
+	{
+			document.write('<div class="'+figura+' '+color+'"></div>')
+	}
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

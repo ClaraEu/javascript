@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio bucles 2</title>
+	<style>
+
+	*{
+		box-sizing: border-box;
+	}	
+		
+		div{
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 2px;
+		}
+	
+		.blanco{
+			background-color: white;
+			border: 1px solid black;
+		}
+
+		.negro{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		
+		//document.write('<div></div>');
+
+		// quiero me pinteis una fila (que no columna), de cuadrados blancos y negros.
+
+		for(var i = 0; i<= 100; i++)
+		{
+			if(i%2 == 0)
+			{
+				document.write('<div class="negro"></div>');
+			}
+			else{
+				document.write('<div class="blanco"></div>');
+			}
+		}
+
+
+
+
+	</script>	
+
+</body>
+</html>

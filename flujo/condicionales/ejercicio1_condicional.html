@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Discoteca</title>
+</head>
+<body>
+	
+
+	<script>
+		
+		//en una discoteca no se puede entrar si no eres mayor de 18 años, pregunta por pantalla la edad, y dile si puede entrar o no.
+
+
+		var edadPersona = prompt('Dime tu edad');
+
+		edadPersona = parseInt(edadPersona);
+
+		const EDAD_CORTE = 18;
+
+		if(edadPersona < EDAD_CORTE && typeof(edadPersona) == 'number')
+		{
+			alert('Un vasito de leche y a la cama');
+		}
+		else
+		{
+			alert('Bienvenido, tenemos el whisky en oferta')
+		}
+
+
+	</script>
+</body>
+</html>

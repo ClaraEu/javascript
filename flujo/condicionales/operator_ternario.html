@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Oprador condicional</title>
+</head>
+<body>
+	<script>
+		
+		var nota = prompt('Dame una nota');
+
+		var resultado = "";
+
+		if(nota < 5)
+		{
+			resultado = "suspenso";
+		}
+		else
+		{
+			resultado = "aprobado";
+		}
+
+		//equivalente en operador condicional
+
+		resultado = (nota < 5)? "suspenso" : "aprobado";
+		alert(resultado); 
+	
+
+
+	</script>
+</body>
+</html>

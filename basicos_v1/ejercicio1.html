@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicio operadores matematicos</title>
+</head>
+<body>
+	
+
+	<script>
+		
+		//dado un 54321 segundos calcula las horas, minutos y segundos restantes que hay en esa cantidad de tiempo.
+
+		//que es lo que tengo
+		var segundosTotales = prompt('Dame una cantidad de segundos');
+
+		//que es lo que me piden
+
+		var horas;
+		var minutos;
+		var segundosRestantes;
+
+
+		horas = segundosTotales / (60*60);
+
+		segundosRestantes = segundosTotales % (60*60);
+
+		//alert(segundosRestantes);
+
+					// 321 / 60
+		minutos = segundosRestantes / 60;
+
+
+								//321 % 60
+		segundosRestantes = segundosRestantes % 60;
+	
+
+		var resultado = 'En '+segundosTotales+' segundos hay '+parseInt(horas)+' horas, '+parseInt(minutos)+' minutos, '+segundosRestantes+' segundos';
+
+		alert(resultado);
+
+
+
+
+	</script>
+</body>
+</html>
