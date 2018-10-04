@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<script>
+			
+			//dado un radio recibido por pantalla calcular el area de un circulo.
+
+			var radio = parseFloat(prompt('Dame un radio de circulo'));
+			//PI*RADIO**2
+
+			const PI = 3.14;
+
+			calcularLongCirc(radio, PI);
+			
+
+
+			function calcularAreaCirculo(pRadio, pPi)
+			{
+				var area = pPi * (pRadio**2);
+				alert(area); 
+
+			}
+
+			function calcularLongCirc(pasameRadio,pasamePI)
+			{
+				var radio = pasameRadio;
+				var pi = pasamePI;
+				var longitud = 2*pasamePI*pasameRadio;
+
+				alert(longitud);
+			}
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

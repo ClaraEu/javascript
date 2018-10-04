@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones devuelven parametros</title>
+</head>
+<body>
+
+
+
+	<script>
+		
+		/*Voy a hacer un control de stock en tienda, sacar el stock actual, añadirStock, quiteStock */
+
+		var stockTienda = 135;
+
+
+		function dameStock(pStockTienda){
+
+			return pStockTienda;
+
+		}
+
+		function addStock(pNumeroAdd)
+		{
+			stockTienda = stockTienda + pNumeroAdd;
+
+			compruebeEstadoStock(stockTienda);
+
+			return stockTienda;
+
+		}
+
+		function substractStock(pCantidadElementosComprados){
+
+			if(pCantidadElementosComprados <= stockTienda)
+			{
+				stockTienda = stockTienda - pCantidadElementosComprados;
+
+				compruebeEstadoStock(stockTienda);
+			}
+			else{
+				console.log('no hay stock suficiente, solo tengo '+stockTienda);
+			}
+
+			
+		}
+
+
+		function compruebeEstadoStock(pStockTienda){
+
+			if(pStockTienda<= 5 && pStockTienda >= 0)
+			{
+				console.log('tu stock es '+ pStockTienda +' seria recomendable comprar stock');
+			}
+			else{
+				console.log('el stock es sufiente');
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

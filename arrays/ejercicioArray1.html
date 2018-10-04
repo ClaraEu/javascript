@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios array 1</title>
+</head>
+<body>
+	
+
+	<script>
+		
+		var listaNumeros = new Array();
+
+		//listaNumeros[listaNumeros.length] = 2;
+
+
+		for(var i = 0; i<100; i++)
+		{
+			listaNumeros[i] = parseInt(Math.random()*100);
+
+		}
+
+		//console.log(listaNumeros);
+
+		//sacame de un array de numeros todos los numeros pares que tenga
+
+
+		function devolverPares(pArrayNumeros){
+
+			for(var i = 0; i < pArrayNumeros.length ; i++)
+			{
+
+				if(pArrayNumeros[i]%2 == 0){
+
+						console.log(pArrayNumeros[i]);	
+				}		
+
+
+			}
+
+		}
+
+		//devolverPares(listaNumeros);
+
+	</script>
+</body>
+</html>

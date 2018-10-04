@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio Arrays asociativos</title>
+</head>
+<body>
+	
+
+	<script>
+		
+			//crear un array asociativo o JSON que nos muestras las caracteristica de una raza concreta de perro. RAZA, PESO, LONGITUD, COLOR, LONGEVIDAD, AGRESIVA (Booleano)
+
+			var perro = new Array();
+
+			perro = {
+					'raza': 'mastin',
+					'peso': 60,
+					'longitud': 1.40,
+					'longevidad' : 20,
+					'agresiva': true,
+					'color':{
+						'color1': 'pardo',
+						'color2': 'negro',
+						'color3': 'blanco'
+					}
+			} 
+
+
+			for(var key in perro){
+				
+				console.log(perro[key]);
+
+				if(key == 'color')
+				{
+					for(var clave in perro[key])
+					{
+						console.log(perro[key][clave]);
+					}
+				}
+			}
+
+
+			/* console.log(perro.raza);
+			console.log(perro.color);
+			console.log(perro.color.color1);
+
+
+			console.log(perro['raza']);
+			console.log(perro['color']);
+			console.log(perro['color']['color1']);*/
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

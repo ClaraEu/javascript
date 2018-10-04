@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>array asociativo</title>
+</head>
+<body>
+
+
+	<script>
+		
+		var alumno = new Array();
+
+
+		alumno = {'nombre' : 'Juan', 'edad' : 36, 'matricula' : 'A45429', 'estado': true}
+
+		//console.log(alumno);
+
+		//nomenclatura de punto
+
+		console.log(alumno.nombre);
+
+
+		//nomenclatura de corchete
+
+		console.log(alumno['edad']);
+
+
+		for(var key in alumno){
+
+			console.log(key + ": " + alumno[key]);
+
+
+
+
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>

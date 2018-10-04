@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones con parametros</title>
+</head>
+<body>
+
+
+	<script>
+
+		var nombreAlumno = prompt('Dime tu nombre');
+		var apellidoAlumno = prompt('Dime tu apellido');
+		
+		function getDatosAlumno(pNombreAlumno, pApellido){
+
+			var nombre = pNombreAlumno;
+			var apellido = pApellido;
+			var mensaje = 'El alumno '+nombre+' '+apellido+' tiene muy buenas notas';
+
+			alert(mensaje);
+
+
+		}
+
+		getDatosAlumno(nombreAlumno,apellidoAlumno);
+
+
+
+	</script>
+	
+</body>
+</html>
