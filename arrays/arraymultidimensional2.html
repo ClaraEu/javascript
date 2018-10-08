@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Array multidimensional 2</title>
+</head>
+<body>
+	<script>
+		
+			var alumno1 = new Array();
+
+			alumno1 = {'nombre': 'Juan', 'edad': 36 , 'matricula':'A3652'};
+
+
+			var alumno2 = new Array();
+
+			alumno2 = {'nombre': 'Pedro', 'edad': 28, 'matricula':'A2453'};
+
+
+			var listaAlumnos = new Array();
+
+			listaAlumnos = [ 
+							alumno1, 
+							alumno2];
+
+
+			/* for(var i=0; i<listaAlumnos.length; i++)
+			{
+				for(var datos in listaAlumnos[i])
+				{
+					document.write('<p>'+ datos +':'+ listaAlumnos[i][datos] +'</p>')
+				}
+			} */
+
+
+
+			for(var i = 0; i<listaAlumnos.length; i++)
+			{
+				//document.write(listaAlumnos[i]['nombre']);
+				if(listaAlumnos[i].edad < 30)
+				{
+					console.log(listaAlumnos[i].nombre)
+				}
+			}
+
+
+
+
+
+
+	</script>
+</body>
+</html>

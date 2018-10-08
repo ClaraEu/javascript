@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicio array</title>
+</head>
+<body>
+	
+	
+
+	<script>
+		
+		//paso 1 crear un listado de secciones de una pagina.
+
+		//paso 2 pintar ese listado de mayor a menor posicion en la consola
+
+		//paso 3 intenteis pintarlo en html
+
+		// paso 4 quiero que los elementos tenga enlace, y el enlace tiene que tener url en el href (texto del array + .html);
+
+
+		var listaSecciones = new Array('HOME','ABOUT', 'CONTACT', 'GALLERY', 'SERVICES');
+
+		for( var i = listaSecciones.length - 1; i >= 0; i--){
+				//console.log(listaSecciones[i]);
+				var enlace = listaSecciones[i].toLowerCase();
+				document.write('<p><a href="'+enlace+'.html">'+listaSecciones[i]+'</a></p>');
+		}
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>

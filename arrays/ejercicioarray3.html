@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio</title>
+</head>
+<body>
+	<script>
+		
+		//listado razas de perro 
+
+		/* perro = {
+					'raza': 'mastin',
+					'peso': 60,
+					'longitud': 1.40,
+					'longevidad' : 20,
+					'agresiva': true,
+					'color': 'Pardo'
+			}  */
+
+
+		// sacar en listado en html todos los nombre de raza de perro que hay en el listado
+
+		// quiero que me saques en un listado todos los perros cuya longitud sea menor de un metro
+
+		// estaría bien que los ejercicios de arriba estuvieran cada un dentro de una funcion.
+
+
+		var listaRazas = new Array();
+
+		var raza1 = {
+					'raza': 'mastin',
+					'peso': 60,
+					'longitud': 140,
+					'longevidad' : 20,
+					'agresiva': true,
+					'color': 'Pardo'	
+					}
+
+
+		var raza2 = {
+					'raza': 'Chucho',
+					'peso': 60,
+					'longitud': 100,
+					'longevidad' : 20,
+					'agresiva': true,
+					'color': 'Pardo'	
+					}
+
+		var raza3 = {
+					'raza': 'bulldog',
+					'peso': 120,
+					'longitud': 70,
+					'longevidad' : 20,
+					'agresiva': false,
+					'color': 'Pardo'	
+					}
+
+		var raza4 = {
+					'raza': 'pastor aleman',
+					'peso': 60,
+					'longitud': 140,
+					'longevidad' : 20,
+					'agresiva': false,
+					'color': 'Pardo'	
+					}
+
+		var raza5 = {
+					'raza': 'pastor aleman',
+					'peso': 60,
+					'longitud': 100,
+					'longevidad' : 20,
+					'agresiva': false,
+					'color': 'Pardo'	
+					}
+
+
+		listaRazas = [raza1, raza2, raza3, raza4, raza5];
+		listaPerros = [raza3, raza2];
+		//otraLista = [raza3];
+
+		//console.log(otraLista);
+		//console.log(listaRazas);
+
+
+
+
+
+		function pintarRaza(plistaPerros)
+		{
+
+			document.write('<ul>');
+
+				for(var i=0; i<plistaPerros.length; i++)
+				{
+
+					document.write('<li>' + plistaPerros[i]['raza'] + '</li>');
+
+				}
+			document.write('</ul>');
+
+		}
+
+		//pintarRaza(listaPerros);
+
+
+
+
+		//voy a crear una funcion que le pase una lista y me devuelva otra distinta con las razas que cumplan dicha condicion.
+
+
+		function filtrarLongitud(plistaPerros)
+		{
+
+			var listaFiltrada = new Array();
+
+			for(var i=0; i<plistaPerros.length; i++)
+			{
+
+				if(plistaPerros[i]['longitud'] <= 100)
+				{
+					listaFiltrada[listaFiltrada.length] = plistaPerros[i];
+
+				}
+			}
+
+			return listaFiltrada;
+
+		}
+
+		var listaResultante = new Array();
+
+		listaResultante = filtrarLongitud(listaRazas);
+
+		pintarRaza(listaResultante);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

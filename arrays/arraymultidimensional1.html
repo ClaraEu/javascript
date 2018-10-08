@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Array multidimensional</title>
+
+	<style>
+		
+		ul{
+			list-style: none;
+		}
+
+		ul li {
+			display: inline-block;
+			margin: 10px;
+			padding: 20px;
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		
+			var zoo = new Array();
+
+			var aves = new Array('Aguila','Lechuza','Pingüino');
+			var felinos = new Array('Tigre', 'Leon', 'Pantera', 'Guepardo');
+			var otros = new Array('Hipopotamo', 'Cocodrilo', 'Rana')
+
+			zoo = [	aves, felinos, otros];
+
+			//console.log(zoo);
+			/* document.write('<ul>');
+			for(var i = 0; i<zoo.length; i++)
+			{
+				for(var j = 0; j<zoo[i].length ; j++)
+				{
+					document.write('<li>'+ zoo[i][j] + '</li>');
+				}
+			}
+			document.write('</ul>'); */
+
+			var contenido = "";
+			
+			contenido = '<ul>';
+			//contenido = contenido + '<li>'; //'<ul><li>'
+
+			for(var i = 0; i<zoo.length; i++)
+			{
+				for(var j = 0; j<zoo[i].length ; j++)
+				{
+					contenido = contenido + '<li>'+zoo[i][j]+'</li>';
+				}
+			}
+
+			contenido = contenido + '</ul>';
+
+
+
+			document.write(contenido);
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
