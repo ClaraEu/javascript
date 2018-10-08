@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>array join</title>
+</head>
+<body>
+	
+	<script>
+		
+
+		//me devuelve un string con los elementos de listado separados por el elemento elegido entre parentesis.
+
+
+		var listaAlumnos = new Array('Tony', 'Javier', 'Sergio', 'Mariano', 'Nedy');
+
+		var arrayString = "Tony+Javier+Sergio+Mariano+Nedy";
+
+
+		var listaAlumnosSinComas = listaAlumnos.join('+');
+
+		console.log(typeof(listaAlumnosSinComas)); //string
+
+		console.log(listaAlumnosSinComas); //el valor el string
+
+
+
+		//existe metodo de los string que me permite crear un array diciendole cual es elemento que me parte el string. SPLIT
+
+		var otraLista = new Array();
+
+		otraLista = listaAlumnosSinComas.split('+');
+
+		console.log(otraLista);
+
+
+		
+
+
+
+
+
+	</script>
+
+
+
+</body>
+</html>

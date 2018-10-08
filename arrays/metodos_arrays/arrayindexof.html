@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index of</title>
+</head>
+<body>
+	
+	<script>
+		
+		//busca lo que metamos entre parentesis dentro del array y nos devuelve el indice del elemento u si nos devuelve -1 es que no lo ha encontrado.
+
+			var palabraBuscar = prompt('Que quieres buscar').toLowerCase();
+
+			var listaAlumnos = new Array('Tony', 'Javier', 'Sergio', 'Mariano', 'Nedy');
+
+			var listaAlumnosMinuscula = new Array();
+
+
+				for(var i=0; i<listaAlumnos.length; i++)
+				{
+					listaAlumnosMinuscula.push( listaAlumnos[i].toLowerCase() );
+				}
+
+
+
+
+
+			var encontrado = listaAlumnosMinuscula.indexOf(palabraBuscar);
+
+			alert(encontrado);
+
+
+
+
+	</script>
+
+
+
+</body>
+</html>

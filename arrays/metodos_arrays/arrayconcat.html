@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concatenar arrays</title>
+</head>
+<body>
+
+	<script>
+		
+		
+		// concatenar dos arrays por orden, recomendable que sean del mismo tipo.
+
+		var verduras = new Array('tomate', 'lechuga', 'pimientos');
+		var carne = new Array('pollo', 'ternera', 'cerdo');
+		var pescado = new Array('Lubina', 'Merluza');
+
+		var listaCompra = new Array();
+
+		//ej1
+		
+		//listaCompra = carne.concat(pescado).concat(verduras);
+
+		//ej2
+
+		listaCompra = carne.concat(verduras,pescado);
+
+		console.log(listaCompra);
+
+
+
+	</script>
+	
+</body>
+</html>

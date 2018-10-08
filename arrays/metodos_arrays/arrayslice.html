@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodo Slice</title>
+</head>
+<body>
+
+
+	<script>
+		
+	//ejemplo1
+
+	/* var listaAlumnos = new Array('Marcos','Ricardo', 'Guillermo', 'Clara', 'Ines', 'Victor');
+
+	var listaAlumnas = new Array();
+
+	listaAlumnas = listaAlumnos.slice(3,5);
+
+	console.log(listaAlumnas); */
+
+	//ejemplo2 elementos separados no consecutivos
+
+	/* var listaAlumnos = new Array('Marcos', 'Ines', 'Ricardo', 'Guillermo', 'Clara', 'Victor');
+
+
+	var listaAlumnas = new Array();
+
+	listaAlumnas = listaAlumnos.slice(1,2).concat(listaAlumnos.slice(4,5))
+
+	console.log(listaAlumnas); */
+
+
+	//ejempplo 3 quiero un array con el ultimo elemento sin modificar el array principal.
+
+
+	/* var listaAlumnos = new Array('Marcos','Ricardo', 'Guillermo', 'Clara', 'Ines', 'Victor');
+
+	var ultimo = new Array();
+
+	//ultimo = listaAlumnos.slice(5, 6)  
+
+	ultimo = listaAlumnos.slice(-4, -2); //ultimo = listaAlumnos.slice(2,4);
+
+	console.log(ultimo); */
+
+
+// ejemplo4
+
+
+	var equipos = new Array('Depor', 'Alaves', 'Atleti', 'Barza', 'Real Madrid', 'Valencia', 'Betis', 'Sevilla' , 'La Real', 'Getafe');
+
+	var zonaMedia = equipos.slice(3, -3);
+
+	console.log(zonaMedia);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
