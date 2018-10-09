@@ -41,7 +41,9 @@
 
 			//paso 4 meto el nodo con el texto introducido dentro del html.
 
-			document.getElementById('blog').appendChild(noticia);
+			document.body.appendChild(noticia);
+
+		noticia.parentNode.removeChild(noticia);
 
 
 		//
@@ -66,15 +68,7 @@
 
 		noticias = [noticiaNew1, noticiaNew2, noticiaNew3, noticiaNew4, noticiaNew5];
 
-
 		noticias = noticias.reverse();
-
-
-
-
-
-
-
 
 		for(var i=0; i<noticias.length; i++)
 		{

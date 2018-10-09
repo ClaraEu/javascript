@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Robapaginas a los 5 segundos</title>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box; 
+		}
+		#wrapper{
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+		p{
+			margin: 10px 0px 20px 0px; 
+		}
+
+		nav ul li {
+			float: left;
+			margin-right: 10px;
+		}
+
+		nav ul{
+			list-style: none; 
+		}
+
+		nav ul li a{
+			display: block;
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+
+		nav ul li a:hover{
+			background-color: red;
+		}
+
+		nav:after{
+			clear: both;
+			display: block;
+			content: "";
+			height: 0;
+		}
+
+		body div:last-child{
+			background-color: rgba(0,0,0,0.5);
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			transition: 1s;
+			
+		}
+
+		body div:last-child p{
+			background-color: white;
+			padding: 10px;
+			color: black;
+			width: 800px;
+			height: 250px;
+			margin: 50px auto;
+		}
+
+		#velo{
+			opacity: 1;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+
+	<div id=wrapper>
+		
+		<header>
+			<nav>
+				<ul>
+					<li><a href="">Item 1</a></li>
+					<li><a href="">Item 2</a></li>
+					<li><a href="">Item 3</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			
+			<section>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorum eaque quibusdam obcaecati id quis maiores, voluptatem, repellat facere quaerat! Itaque, mollitia, nemo. Ducimus fuga, quis exercitationem! At, esse modi!</p>
+				<p>Sequi saepe unde eveniet explicabo placeat minus non, illum alias distinctio labore accusamus perspiciatis vero quo velit nihil atque dolorem suscipit voluptas odio veniam, dolore aliquam itaque. Perspiciatis eaque, nulla.</p>
+				<p>Deserunt earum, quo, perferendis quod, inventore harum, sed provident ea ut suscipit impedit nulla. Commodi adipisci, magnam quae quam! Unde nihil quae quod. Placeat nostrum veniam obcaecati vero voluptate fugiat.</p>
+				<p>Mollitia nam explicabo, nisi eveniet quisquam obcaecati officia delectus aspernatur est blanditiis aliquam praesentium ipsam similique consectetur illum, dolorem velit dolorum quasi pariatur! Enim in quam dignissimos nihil quod, quaerat.</p>
+				<p>Natus eaque voluptate quam distinctio accusantium. At, pariatur sunt maiores aperiam eum iure soluta laboriosam voluptatum, perferendis voluptas, enim corporis! Sequi ab illo, esse deleniti, fuga placeat consequuntur distinctio quam?</p>
+
+
+
+			</section>
+
+		</main>
+		<footer>
+			
+			<p>Copyright @ 2018</p>
+		</footer>
+
+
+	</div>
+	
+
+
+
+	<script>
+		
+			//hacer una pagina que tenga un menu, main con un titulo y tres parrafos con texto falso, y footer todo esto en html puro y duro.
+
+			//en javascript quiero que hagais un funcion que se ejecute a los 5 segundos (investigacion por vuestra parte).
+
+			//quiero que es funcion, pinte un elemento que ocupe toda la pagina con un texto, una imagen.
+
+
+			var intervalo = setInterval(pintarRobaPaginas, 1000);
+			var otrointervalo;
+			var velo;
+
+
+			function pintarRobaPaginas(){
+
+				velo = document.createElement('div');
+
+				var cajaBlanca = document.createElement('p');
+
+				var textoCaja = document.createTextNode('Esto es un robapaginas');
+
+				cajaBlanca.appendChild(textoCaja);
+
+				velo.appendChild(cajaBlanca);
+
+				document.body.appendChild(velo);
+
+				otrointervalo = setInterval(cargarEfecto,500);
+
+				clearInterval(intervalo);
+			}
+
+
+			function quitarRobaPaginas(){
+				velo.parentNode.removeChild(velo);
+			}
+
+
+
+			function cargarEfecto(){
+				velo.setAttribute('id', 'velo');
+				clearInterval(otrointervalo);
+			}
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
