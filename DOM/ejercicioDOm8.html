@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Obtener atributos</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+	<img id="imagen" src="https://www.petdarling.com/articulos/wp-content/uploads/2014/06/como-quitarle-las-pulgas-a-mi-perro.jpg" alt="perrito bonito">
+
+	<script>
+	
+
+		//opcion 1
+
+		var atributoAlt = document.getElementById('imagen').getAttribute('src');
+
+		console.log(atributoAlt);
+
+		//opcion 2
+
+		var imagen = document.getElementById('imagen');
+
+		
+
+
+		//opcion 3
+
+		imagen.style.marginLeft = "200px";
+
+		imagen.style.transform = 'rotateZ(30deg)';
+
+		imagen.alt = "gato";
+
+		console.log(imagen)
+
+	
+
+	</script>
+
+
+</body>
+</html>

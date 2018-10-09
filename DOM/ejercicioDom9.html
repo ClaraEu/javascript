@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>cuadrados</title>
+
+	<style>
+		
+		div{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			margin-bottom: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	
+	<div></div>
+	<div></div>
+	<div></div>
+
+
+
+<script>
+		
+		//el objetivo del ejercicio es crear un funcion que cuando sea llamada, que lo hare por console, cambie el color de todos los cuadrados.
+
+		var cuadrados = document.getElementsByTagName('div');
+
+		
+
+		cuadradoBorrar = parseInt(cuadradoBorrar) - 1;
+
+		console.log(cuadradoBorrar);
+
+		function cambiarColor(){
+
+			var i = 0;
+			while(i<cuadrados.length){
+				cuadrados[i].style.backgroundColor = 'black';	
+				i++;
+			}
+			
+
+		}
+		
+
+		function borrarCuadrado(pPosicionCuadrado){
+
+			cuadrados[pPosicionCuadrado].style.visibility = 'hidden';
+		}
+
+		var cuadradoBorrar = prompt('dime que cuadrado borro');
+
+		borrarCuadrado(cuadradoBorrar);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
