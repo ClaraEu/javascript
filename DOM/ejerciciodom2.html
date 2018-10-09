@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio DOM 2</title>
+</head>
+<body>
+	
+	<header>
+		<nav>
+			<ul></ul>
+		</nav>
+	</header>
+
+	<script>
+		
+			menu = new Array('home', 'about us', 'contact', 'gallery');
+
+			//quiero, sin utilizar document.write dibujar un listado de li's dentro de un ul de nav usando el array dado.
+
+
+			//paso 1: recorrer el array.
+
+			//paso 2: pintar con innerHTML los li's dentro de ul
+
+			var lista = new Array();
+
+			lista = document.getElementsByTagName('ul');
+
+			for(var i=0; i<menu.length; i++)
+			{
+				lista[0].innerHTML =  lista[0].innerHTML + '<li>'+menu[i]+'</li>';
+			}
+
+
+	</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear nodos nuevos en html con javascript</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Item 1</a></li>
+				<li><a href="">Item 2</a></li>
+				<li><a href="">Item 3</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		
+			<section id="blog">
+				
+			</section>
+
+	</main>
+	<footer>
+		<p>Copyright @ 2018</p>
+	</footer>
+
+	
+	<script>
+			//paso 1 creo el nodo.
+
+				var noticia = document.createElement('article');
+
+			//paso 2 creo el texto de la noticia
+				var textoNoticia = document.createTextNode('En lugar de la mancha de cuyo nombre no puedo acordarme');
+
+
+			//paso 3 meto el texto dentro de nodo article.
+
+				noticia.appendChild(textoNoticia);
+
+			//paso 4 meto el nodo con el texto introducido dentro del html.
+
+			document.getElementById('blog').appendChild(noticia);
+
+
+		//
+
+		var noticias = new Array();
+
+		var noticiaNew1 = new Array();
+
+		noticiaNew1 = {'titulo': 'Hola k ase', 'texto': 'Con 100 cañones por barba', 'img': 'https://www.artesanialatina.net/2425-large_default/maqueta-madera-plastico-barco-remolcador-atlantic-1-50-rc.jpg'}
+
+		var noticiaNew2 = new Array();
+		noticiaNew2 = {'titulo': '2La virgen del pilar', 'texto': 'Que vive la virgen del pilar!!!', 'img': 'https://www.aciprensa.com/imagespp/VirgenDelPilar111016.jpg'}
+
+		var noticiaNew3 = new Array();
+		noticiaNew3 = {'titulo': '3La virgen del pilar', 'texto': 'Que vive la virgen del pilar!!!', 'img': 'https://www.aciprensa.com/imagespp/VirgenDelPilar111016.jpg'}
+
+		var noticiaNew4 = new Array();
+		noticiaNew4 = {'titulo': '4La virgen del pilar', 'texto': 'Que vive la virgen del pilar!!!', 'img': 'https://www.aciprensa.com/imagespp/VirgenDelPilar111016.jpg'}
+
+		var noticiaNew5 = new Array();
+		noticiaNew5 = {'titulo': '5La virgen del pilar', 'texto': 'Que vive la virgen del pilar!!!', 'img': 'https://www.aciprensa.com/imagespp/VirgenDelPilar111016.jpg'}
+
+		noticias = [noticiaNew1, noticiaNew2, noticiaNew3, noticiaNew4, noticiaNew5];
+
+
+		noticias = noticias.reverse();
+
+
+
+
+
+
+
+
+		for(var i=0; i<noticias.length; i++)
+		{
+
+			var elementoNoticia = document.createElement('article');
+
+			var textoNoticia2 = '<h2>'+  noticias[i].titulo  +'</h2><div><p>'+ noticias[i].texto +'</p><img src="'+ noticias[i].img+'"></div>';
+
+			elementoNoticia.innerHTML = textoNoticia2 ;
+
+			document.getElementById('blog').appendChild(elementoNoticia);
+
+
+		}
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

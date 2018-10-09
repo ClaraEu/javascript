@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercio DOM 1</title>
+</head>
+<body>
+
+	<p>
+		<span>   Pepe</span>
+	</p>
+
+	<p>Juan</p>
+
+	<p>Rodrigo</p>
+
+	<script>
+		
+		var parrafos = document.getElementsByTagName('p');
+
+
+		//alert(parrafos);
+
+		console.log(parrafos[0].innerHTML); //me saca el valor
+
+		console.log(parrafos[0].innerHTML = "Veronica") //me sobrescribe el valor.
+
+
+	</script>
+	
+</body>
+</html>

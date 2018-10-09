@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio con Name</title>
+</head>
+<body>
+	
+	<form action="send.html" method="post">
+		
+		<input type="text" name="nombre">
+
+		<input type="text" name="nombre"  value="ignacio">
+
+
+		<input type="radio" name="radio" value="pepe">
+
+		<input type="radio" name="radio" value="rosana">
+
+		<input type="submit" value="Enviar">
+
+
+	</form>
+
+	<script>
+		
+		var valorInput = document.getElementsByName('radio');
+
+		console.log(valorInput[0].value);	
+
+	</script>
+
+</body>
+</html>
