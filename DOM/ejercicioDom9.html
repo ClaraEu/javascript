@@ -31,10 +31,6 @@
 
 		
 
-		cuadradoBorrar = parseInt(cuadradoBorrar) - 1;
-
-		console.log(cuadradoBorrar);
-
 		function cambiarColor(){
 
 			var i = 0;
@@ -52,9 +48,60 @@
 			cuadrados[pPosicionCuadrado].style.visibility = 'hidden';
 		}
 
-		var cuadradoBorrar = prompt('dime que cuadrado borro');
+		//var cuadradoBorrar = prompt('dime que cuadrado borro');
 
-		borrarCuadrado(cuadradoBorrar);
+				//cuadradoBorrar = parseInt(cuadradoBorrar) - 1;
+
+		//borrarCuadrado(cuadradoBorrar);
+
+
+/*
+		 var grados = 0;
+		var cuadradoActual = 0;
+
+		function girarCuadrado( pPosicion, pGrados)
+		{
+			if(pPosicion != cuadradoActual )
+			{
+				grados = 0;
+				cuadradoActual = pPosicion;
+			}
+
+			grados = grados + pGrados;
+
+			cuadrados[pPosicion].style.transform = "rotateZ("+grados+"deg)";
+		} 
+
+*/
+
+
+		var grados = 0;
+		var arrayPosiciones = new Array(0,0,0);
+
+		function girarCuadrado( pPosicion, pGrados)
+		{
+			arrayPosiciones[pPosicion] += pGrados;
+
+			console.log(arrayPosiciones); 
+
+			cuadrados[pPosicion].style.transform = "rotateZ("+arrayPosiciones[pPosicion]+"deg)";
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
