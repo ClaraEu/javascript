@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos 2</title>
+</head>
+<body>
+	<!-- opcion 1 
+	<ul id="menu">
+			<li onclick="cambiar('blue')">Azul</li>
+			<li onclick="cambiar('green')">Verde</li>
+			<li onclick="cambiar('yellow')">Amarillo</li>
+			<li onclick="cambiar('red')">Rojo</li>
+	</ul>
+
+	-->
+
+
+	<ul id="menu">
+			<li>Azul</li>
+			<li>Verde</li>
+			<li>Amarillo</li>
+			<li>Rojo</li>
+			<li>Tomato</li>
+	</ul>
+<script>
+
+	/*opcion 1
+
+	function cambiar(pColor){
+		
+				document.body.style.backgroundColor = pColor;
+				
+		
+	}
+
+	*/
+
+
+	//opcion 2
+
+		var menu = document.getElementById('menu');
+
+		var botones = menu.getElementsByTagName('li');
+
+		for(var i=0; i<botones.length; i++)
+		{	
+			botones[i].addEventListener('click', lanzarColor);
+
+		}
+
+		function lanzarColor(e){
+			console.log(this.innerText);
+			//cambiarColor(e.target.innerText);
+			cambiarColor(this.innerText);
+		}
+
+
+
+
+		function cambiarColor(pColor){
+
+			switch (pColor) {
+				case 'Azul':
+					document.body.style.backgroundColor = 'blue';
+					break;
+				case 'Amarillo':
+					document.body.style.backgroundColor = 'yellow';
+					break;
+
+				case 'Rojo':
+					document.body.style.backgroundColor = 'red';
+					break;
+
+				case 'Verde':
+					document.body.style.backgroundColor = 'green';
+					break;
+
+
+				case 'Tomato':
+					document.body.style.backgroundColor = 'tomato';
+					break
+				
+			}
+
+		}
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

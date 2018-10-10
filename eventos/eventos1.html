@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzar eventos</title>
+
+	<style>
+		
+		div{
+			width: 100px;
+			height: 20px;
+			background-color: red;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+	<div onclick="saludar('Juan')">
+		<span>Saludar</span>
+	</div>
+
+
+	<div id="despedida">
+		<span>Despedirse</span>
+	</div>
+
+
+	<script>
+		var nombre = 'Juan';
+		//opcion 1
+			function saludar(pNombre){
+				alert('hola ' + pNombre);
+			}
+
+
+		//opcion 2
+
+			var boton = document.getElementById('despedida');
+
+
+			boton.addEventListener('click', lanzarDespedida);
+
+			
+
+			window.onload = lanzarDespedida();
+
+			function lanzarDespedida(event){
+				despedida(nombre);
+			}
+
+
+			function despedida(pNombre){
+				alert('Adios ' + pNombre);
+			}
+
+
+
+
+
+			document.body.addEventListener('keydown', lanzarDespedida);
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
